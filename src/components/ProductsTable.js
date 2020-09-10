@@ -1,5 +1,130 @@
 
 import React, { Component } from 'react';
+import TableBody from '@material-ui/core/TableBody';
+import { withStyles } from '@material-ui/core/styles';
+import TableCell from '@material-ui/core/TableCell';
+import TableContainer from '@material-ui/core/TableContainer';
+import TableHead from '@material-ui/core/TableHead';
+import TableRow from '@material-ui/core/TableRow';
+import Paper from '@material-ui/core/Paper';
+import Table from '@material-ui/core/Table';
+// import './App.css';
+import Button from '@material-ui/core/Button';
+import ProductRow from './ProductRow';
+
+// import './User.css';
+
+const StyledTableCell = withStyles((theme) => ({
+    head: {
+      backgroundColor: theme.palette.common.black,
+      color: theme.palette.common.white,
+    },
+    body: {
+      fontSize: 14,
+    },
+  }))(TableCell);
+  
+  const StyledTableRow = withStyles((theme) => ({
+    root: {
+      '&:nth-of-type(odd)': {
+        backgroundColor: theme.palette.action.hover,
+      },
+    },
+  }))(TableRow);
+
+class ProductsTable extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            editedProductName: props.product,
+            editedProductCategory: props.category,
+            editedProductPrice: props.price,
+            editedProductRest: props.rest,
+            isEdit: false,
+        }
+    }
+
+    // onEdit = () => {
+    //     this.setState({ isEdit: true })
+    // }
+
+    // onCancel = () => {
+    //     this.setState({
+    //         isEdit: false,
+    //         editedProductName: this.props.product
+    //     })
+    // }
+
+    // onChangeProductName = (e) => {
+    //     this.setState({
+    //         editedProductName: e.target.value
+    //     })
+    // }
+
+    // updateProduct = () => {
+    //     const { editedProductName } = this.state;
+    //     const { editedProductCategory} = this.state;
+    //     const { editedProductPrice} = this.state;
+    //     const { editedProductRest} = this.state;
+
+    //     this.props.onUpdateUser(editedProductName, editedProductCategory, editedProductPrice, editedProductRest);
+    //     this.setState({ isEdit: false })
+    // }
+
+    render() {
+        // const { isEdit, editedNameProduct, editedProductCategory, editedProductPrice, editedProductRest } = this.state;
+        const { product, category, price, rest, key, onRemoveUser, row } = this.props;
+        return (
+            <TableContainer component={Paper}>
+            <Table aria-label="customized table">
+              <TableHead>
+                <TableRow>
+                  <StyledTableCell>Product name</StyledTableCell>
+                  <StyledTableCell align="right">Category</StyledTableCell>
+                  <StyledTableCell align="right">Price</StyledTableCell>
+                  <StyledTableCell align="right">Rest</StyledTableCell>
+                  <StyledTableCell align="right">Actions</StyledTableCell>
+                </TableRow>
+              </TableHead>
+              <TableBody>
+              {row.map((row, i) => (
+                <ProductRow
+                    productName={row.product}
+                    productkey={i}
+                    productCategory={row.category}
+                    productPrice={row.price}
+                    productRest={row.rest}
+                />
+                ))}
+              </TableBody>
+            </Table>
+          </TableContainer>
+        )
+    }
+}
+
+export default ProductsTable;
+
+
+// export function User2({ name, position }) {
+//     return <div>{name} #{position}</div>
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // import { withStyles, makeStyles } from '@material-ui/core/styles';
 // import Table from '@material-ui/core/Table';
 // import TableBody from '@material-ui/core/TableBody';
