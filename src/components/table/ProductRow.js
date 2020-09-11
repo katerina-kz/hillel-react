@@ -1,13 +1,12 @@
 
 import React, { Component } from 'react';
-import TableBody from '@material-ui/core/TableBody';
 import { withStyles } from '@material-ui/core/styles';
 import TableCell from '@material-ui/core/TableCell';
 import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
-// import './App.css';
+import './ProductRow.css';
 import Button from '@material-ui/core/Button';
 
 // import './User.css';
@@ -43,36 +42,14 @@ class ProductRow extends Component {
         }
     }
 
-    // onEdit = () => {
-    //     this.setState({ isEdit: true })
-    // }
+    onEdit = () => {
+        this.setState({ isEdit: true })
+    }
 
-    // onCancel = () => {
-    //     this.setState({
-    //         isEdit: false,
-    //         editedProductName: this.props.product
-    //     })
-    // }
-
-    // onChangeProductName = (e) => {
-    //     this.setState({
-    //         editedProductName: e.target.value
-    //     })
-    // }
-
-    // updateProduct = () => {
-    //     const { editedProductName } = this.state;
-    //     const { editedProductCategory} = this.state;
-    //     const { editedProductPrice} = this.state;
-    //     const { editedProductRest} = this.state;
-
-    //     this.props.onUpdateUser(editedProductName, editedProductCategory, editedProductPrice, editedProductRest);
-    //     this.setState({ isEdit: false })
-    // }
 
     render() {
-        // const { isEdit, editedNameProduct, editedProductCategory, editedProductPrice, editedProductRest } = this.state;
-        const { productName, productCategory, productPrice, productRest, productKey, onRemoveUser } = this.props;
+        const { isEdit } = this.state;
+        const { productName, productCategory, productPrice, productRest, productKey, onRemoveProduct } = this.props;
         return (
                 <StyledTableRow key={productKey}>
                     <StyledTableCell component="th" scope="row">
@@ -83,20 +60,24 @@ class ProductRow extends Component {
                     <StyledTableCell align="right">{productRest}</StyledTableCell>
                     <StyledTableCell align="right">
                     
-                    <Button variant="contained"
+                    <Button 
+                        variant="contained"
                         color="primary"
                         size="small"
                         // className={classes.button}
                         // startIcon={<DeleteIcon />}
                         >
                     Edit</Button>
-                    <Button variant="contained"
+                    {!isEdit && 
+                    <Button 
+                        variant="contained"
                         color="secondary"
                         size="small"
                         // className={classes.button}
                         // startIcon={<DeleteIcon />}
+                        onClick={() => onRemoveProduct(productKey)}
                     >
-                    Remove</Button>
+                    Remove</Button>}
                     </StyledTableCell>
                 </StyledTableRow>
         )

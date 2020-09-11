@@ -74,7 +74,7 @@ class ProductsTable extends Component {
 
     render() {
         // const { isEdit, editedNameProduct, editedProductCategory, editedProductPrice, editedProductRest } = this.state;
-        const { product, category, price, rest, key, onRemoveUser, row } = this.props;
+        const { product, category, price, rest, onRemoveProduct, row } = this.props;
         return (
             <TableContainer component={Paper}>
             <Table aria-label="customized table">
@@ -88,15 +88,16 @@ class ProductsTable extends Component {
                 </TableRow>
               </TableHead>
               <TableBody>
-              {row.map((row, i) => (
-                <ProductRow
-                    productName={row.product}
-                    productkey={i}
-                    productCategory={row.category}
-                    productPrice={row.price}
-                    productRest={row.rest}
-                />
-                ))}
+                {row.map((row, i) => (
+                  <ProductRow
+                      productName={row.product}
+                      productKey={i}
+                      productCategory={row.category}
+                      productPrice={row.price}
+                      productRest={row.rest}
+                      onRemoveProduct={onRemoveProduct}
+                  />
+                  ))}
               </TableBody>
             </Table>
           </TableContainer>
