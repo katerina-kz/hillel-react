@@ -1,5 +1,6 @@
 .form-wrapper {
     margin-top: 20px;
+    display: flex;
 }
 
 .input {
@@ -8,5 +9,16 @@
 }
 
 .form-button {
-    margin-top: 10px;
+    margin-top: auto;
 }
+
+button {
+    margin: 10px;
+}
+
+.MuiFormControl-root,
+.MuiButton-containedSizeSmall {
+    margin: 5px !important;
+}
+
+

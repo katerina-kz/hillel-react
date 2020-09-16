@@ -40,7 +40,33 @@
 }
 
 .wrapper {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   margin-top: 20px;
+}
+
+.form-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+button.positive {
+  max-width: 150px;
+  margin: 0 !important;
+}
+
+.ui.table {
+  text-align: center;
+}
+
+.labeled.input {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+}
+
+button.ui.red {
+  margin: 0 !important;
 }

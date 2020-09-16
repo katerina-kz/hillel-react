@@ -1,87 +1,180 @@
 
 import React, { Component } from 'react';
-import { withStyles } from '@material-ui/core/styles';
-import TableCell from '@material-ui/core/TableCell';
-import TableContainer from '@material-ui/core/TableContainer';
-import TableHead from '@material-ui/core/TableHead';
-import TableRow from '@material-ui/core/TableRow';
-import Paper from '@material-ui/core/Paper';
+import { Table, Button } from "semantic-ui-react";
 import './ProductRow.css';
-import Button from '@material-ui/core/Button';
-
-// import './User.css';
-
-const StyledTableCell = withStyles((theme) => ({
-    head: {
-      backgroundColor: theme.palette.common.black,
-      color: theme.palette.common.white,
-    },
-    body: {
-      fontSize: 14,
-    },
-  }))(TableCell);
-  
-  const StyledTableRow = withStyles((theme) => ({
-    root: {
-      '&:nth-of-type(odd)': {
-        backgroundColor: theme.palette.action.hover,
-      },
-    },
-  }))(TableRow);
+import product from '../../prop-types/product';
+import PropTypes from 'prop-types';
+import "react-inputs-validation/lib/react-inputs-validation.min.css";
+import { Textbox } from 'react-inputs-validation';
 
 class ProductRow extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            editedProductName: props.product,
+            editedProductName: props.name,
             editedProductCategory: props.category,
             editedProductPrice: props.price,
             editedProductRest: props.rest,
+            hasNameError: true,
+            hasCategoryError: true,
+            hasPriceError: true,
+            hasRestError: true,
+            validate: false,
             isEdit: false,
         }
+    }
+
+    componentDidMount() {
+        const requiredValidator = value => !value ? 'Required!' : '';
     }
 
     onEdit = () => {
         this.setState({ isEdit: true })
     }
 
+    onChangeName = (e) => {
+      this.setState({
+        editedProductName: e,
+      })
+    }
+
+    onChangeCategory = (e) => {
+      this.setState({
+        editedProductCategory: e,
+      })
+    }
+
+    onChangePrice = (e) => {
+      this.setState({
+        editedProductPrice : e,
+      })
+    }
+
+    onChangeRest = (e) => {
+      this.setState({
+       editedProductRest: e,
+      })
+    }
+
+    updateUser = () => {
+      const { editedProductName, editedProductCategory, editedProductPrice, editedProductRest, hasNameError, hasCategoryError, hasPriceError, hasRestError} = this.state;
+      const { product } = this.props;
+        if (!hasNameError &&
+            !hasCategoryError &&
+            !hasPriceError &&
+            !hasRestError) {
+            console.log(this.state)
+            this.props.onUpdateProduct(editedProductName, editedProductCategory, editedProductPrice, editedProductRest, product.id);
+            this.setState({
+                isEdit: false })
+            }
+        }
+
+    onCancel = () => {
+      this.setState({
+          isEdit: false,
+          editedProductName: this.props.name,
+          editedProductCategory: this.props.category,
+          editedProductPrice: this.props.price,
+          editedProductRest: this.props.rest,
+      })
+  }
 
     render() {
-        const { isEdit } = this.state;
-        const { productName, productCategory, productPrice, productRest, productKey, onRemoveProduct } = this.props;
+        const { isEdit, requiredValidator } = this.state;
+        const { product, onRemoveProduct } = this.props;
         return (
-                <StyledTableRow key={productKey}>
-                    <StyledTableCell component="th" scope="row">
-                        {productName}
-                    </StyledTableCell>
-                    <StyledTableCell align="right">{productCategory}</StyledTableCell>
-                    <StyledTableCell align="right">{productPrice}</StyledTableCell>
-                    <StyledTableCell align="right">{productRest}</StyledTableCell>
-                    <StyledTableCell align="right">
-                    
-                    <Button 
-                        variant="contained"
-                        color="primary"
-                        size="small"
-                        // className={classes.button}
-                        // startIcon={<DeleteIcon />}
-                        >
-                    Edit</Button>
-                    {!isEdit && 
-                    <Button 
-                        variant="contained"
-                        color="secondary"
-                        size="small"
-                        // className={classes.button}
-                        // startIcon={<DeleteIcon />}
-                        onClick={() => onRemoveProduct(productKey)}
-                    >
-                    Remove</Button>}
-                    </StyledTableCell>
-                </StyledTableRow>
+                <Table.Row>
+                  {
+                  isEdit
+                    ? <Textbox
+                          attributesInput={{
+                              id: "Name",
+                              name: "Name",
+                              type: "text",
+                              placeholder: "Place your name here ^-^"
+                          }}
+                          validate={requiredValidator}
+                          value={this.editedProductName}
+                          onChange={this.onChangeName}
+                          onBlur={() => {( !this.state.editedProductName) ? this.setState({ hasNameError: true }) : this.setState({ hasNameError: false });}}
+                          label="Product name"
+                          type="text" />
+                    : <Table.Cell>{product.name}</Table.Cell>
+                  }
+                   {
+                  isEdit
+                    ? <Textbox
+                          attributesInput={{
+                              id: "Category",
+                              name: "Category",
+                              type: "text",
+                              placeholder: "Place product category here ^-^"
+                          }}
+                          validate={requiredValidator}
+                          value={this.editedProductCategory}
+                          onChange={this.onChangeCategory}
+                          onBlur={() => { (!this.state.editedProductCategory) ? this.setState({ hasCategoryError: true }) : this.setState({ hasCategoryError: false }) }}
+                          label="Category"
+                          type="text" />
+                    : <Table.Cell>{product.category}</Table.Cell>
+                  }
+                   {
+                  isEdit
+                    ? <Textbox
+                          attributesInput={{
+                              id: "Price",
+                              name: "Price",
+                              type: "text",
+                              placeholder: "Place product price here ^-^"
+                          }}
+                          validate={requiredValidator}
+                          value={this.editedProductPrice}
+                          onChange={this.onChangePrice}
+                          onBlur={() => { ( !this.state.editedProductPrice) ? this.setState({ hasPriceError: true }) : this.setState({ hasPriceError: false }) }}
+                          label="Price"
+                          type="text" />
+                    : <Table.Cell>{product.price}</Table.Cell>
+                  }
+                   {
+                  isEdit
+                    ? <Textbox
+                          attributesInput={{
+                              id: "Rest",
+                              name: "Rest",
+                              type: "text",
+                              placeholder: "Place amount of product here ^-^"
+                          }}
+                          validate={requiredValidator}
+                          value={this.editedProductRest}
+                          onChange={this.onChangeRest}
+                          onBlur={() => {( !this.state.editedProductRest) ? this.setState({ hasRestError: true }) : this.setState({ hasRestError: false }) }}
+                          label="Rest"
+                          type="text" />
+                    : <Table.Cell>{product.rest}</Table.Cell>
+                  }
+
+                  <Table.Cell>
+                    {isEdit &&
+                    <Button.Group>
+                        <Button onClick={this.updateUser} color='green'>Save</Button>
+                        <Button.Or />
+                        <Button onClick={this.onCancel} color='red'>Cancel</Button>
+                    </Button.Group>
+                    }
+
+                    {!isEdit && <Button color='blue' onClick={this.onEdit}>Edit</Button>}
+                    {!isEdit && <Button onClick={() => onRemoveProduct(product.id)} color='red'>Remove</Button>}
+                  </Table.Cell>
+              </Table.Row>
         )
     }
 }
 
 export default ProductRow;
+
+ProductRow.propTypes = {
+    product: product.isRequired,
+    onRemoveProduct: PropTypes.func.isRequired,
+};
