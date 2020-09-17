@@ -9,8 +9,10 @@ import Blog from "./home-tasks/ht2/Blog";
   class App extends Component {
     render() {
       return (
-        <TableWork />
-        // <Blog />
+          <>
+        {/*<TableWork />*/}
+        <Blog />
+        </>
       )
     }
   }

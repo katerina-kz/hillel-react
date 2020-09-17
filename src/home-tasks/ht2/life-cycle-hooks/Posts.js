@@ -1,12 +1,27 @@
 import React, { Component, Fragment } from 'react';
-import { Feed, Loader } from 'semantic-ui-react';
+import { Feed, Loader, Button } from 'semantic-ui-react';
+import CommentsList from "./CommentsList";
 
 class Posts extends Component {
 
   state = {
     posts: [],
+    selectedPost: null,
+    isCommentOpened: false,
     isPostFetching: false,
   };
+    //
+    // toggleClick = () =>{
+    //     this.setState({
+    //         isCommentOpened: !this.state.isCommentOpened
+    //     });
+
+    // };
+
+    handleCommentSelection = post => {
+        this.setState({ selectedPost: post })
+        console.log(this.state)
+    };
 
   componentDidMount() {
     this.setState({ isPostFetching: true });
@@ -18,8 +33,9 @@ class Posts extends Component {
   }
 
   render() {
-    const { posts, isPostFetching } = this.state;
-    const { onPostSelect } = this.props;
+    const { posts, isPostFetching, selectedPost } = this.state;
+    const { onPostSelect, onShowComments } = this.props;
+    // if (this.state.isCommentOpened) return <CommentsList />;
 
     return (
       <Fragment>
@@ -35,6 +51,8 @@ class Posts extends Component {
                 <Feed.Extra text>
                   {post.body}
                 </Feed.Extra>
+                <Button onClick={() => this.handleCommentSelection(post.id)}>See all comments</Button>
+                  {post.id === selectedPost ? <CommentsList postId={selectedPost}/> : null}
               </Feed.Content>
             </Feed.Event>
           ))}
