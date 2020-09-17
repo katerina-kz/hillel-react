@@ -3,6 +3,8 @@ import { Button } from 'semantic-ui-react';
 import { Textbox } from 'react-inputs-validation';
 import "./AddProductForm.css"
 import "react-inputs-validation/lib/react-inputs-validation.min.css";
+import PropTypes from 'prop-types';
+import product from "../../prop-types/product";
 
 
 
@@ -29,6 +31,15 @@ class AddProductForm extends Component {
         const requiredValidator = value => !value ? 'Required!' : '';
     }
 
+    resetFields = () => {
+        this.setState({
+            newProductName: '',
+            newProductCategory: '',
+            newProductPrice: '',
+            newProductRest: '',
+        })
+    }
+
     render () {
         const {requiredValidator} = this.state;
         const { addNewProduct } = this.props;
@@ -47,7 +58,7 @@ class AddProductForm extends Component {
                         validate={requiredValidator}
                         value={this.newProductName}
                         onChange={e => { this.setState({ newProductName: e }) }}
-                        onBlur={() => { ( this.state.newProductName === '') ? this.setState({ hasNameError: true }) : this.setState({ hasNameError: false }) }}
+                        onBlur={() => { ( this.state.newProductName === '') ? this.setState({ hasNameError: false }) : this.setState({ hasNameError: true }) }}
                     />
                     <Textbox
                         attributesWrapper={{}}
@@ -61,7 +72,7 @@ class AddProductForm extends Component {
                         validate={requiredValidator}
                         value={this.newProductCategory}
                         onChange={e => {this.setState({ newProductCategory: e }) }}
-                        onBlur={() => {( this.state.newProductCategory === '') ? this.setState({ hasCategoryError: true }) : this.setState({ hasCategoryError: false }) }}
+                        onBlur={() => {( this.state.newProductCategory === '') ? this.setState({ hasCategoryError: false }) : this.setState({ hasCategoryError: true }) }}
                     />
                     <Textbox
                         attributesWrapper={{}}
@@ -75,7 +86,7 @@ class AddProductForm extends Component {
                         validate={requiredValidator}
                         value={this.newProductPrice}
                         onChange={e => { this.setState({ newProductPrice: e }) }}
-                        onBlur={() => {( this.state.newProductPrice === '') ? this.setState({ hasPriceError: true }) : this.setState({ hasPriceError: false }) }}
+                        onBlur={() => {( this.state.newProductPrice === '') ? this.setState({ hasPriceError: false }) : this.setState({ hasPriceError: true }) }}
                     />
                     <Textbox
                         attributesWrapper={{}}
@@ -89,7 +100,7 @@ class AddProductForm extends Component {
                         validate={requiredValidator}
                         value={this.newProductRest}
                         onChange={e => {this.setState({ newProductRest: e }) }}
-                        onBlur={() => {(this.state.newProductRest === '') ? this.setState({ hasRestError: true }) : this.setState({ hasRestError: false }) }}
+                        onBlur={() => {(this.state.newProductRest === '') ? this.setState({ hasRestError: false }) : this.setState({ hasRestError: true }) }}
                     />
                     <Button
                         positive
@@ -103,8 +114,10 @@ class AddProductForm extends Component {
                                 hasCategoryError,
                                 hasPriceError,
                                 hasRestError } = this.state;
-                            if (!hasNameError && !hasCategoryError && !hasPriceError && !hasRestError) {
+                            console.log(this.state)
+                            if (hasNameError && hasCategoryError && hasPriceError && hasRestError) {
                                     addNewProduct(newProductName, newProductCategory, newProductPrice, newProductRest);
+                                    this.resetFields();
                                 }
                             }
                         }
@@ -115,4 +128,13 @@ class AddProductForm extends Component {
     }    
 }
 
-export default AddProductForm; 
+export default AddProductForm;
+
+AddProductForm.propTypes = {
+    product,
+    addNewProduct: PropTypes.func.isRequired,
+};
+
+AddProductForm.defaultProps = {
+    product: {},
+};

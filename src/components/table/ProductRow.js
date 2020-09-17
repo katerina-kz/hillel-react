@@ -64,7 +64,6 @@ class ProductRow extends Component {
             !hasCategoryError &&
             !hasPriceError &&
             !hasRestError) {
-            console.log(this.state)
             this.props.onUpdateProduct(editedProductName, editedProductCategory, editedProductPrice, editedProductRest, product.id);
             this.setState({
                 isEdit: false })
