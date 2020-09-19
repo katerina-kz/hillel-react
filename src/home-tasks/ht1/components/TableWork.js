@@ -13,18 +13,13 @@ class TableWork extends Component {
             createData('Macbook', 'laptop', '1400$', "2", 1),
             createData('Samsung Galaxy', 'phones', '400$', "9", 2)
         ],
-        newProductName: '',
-        newProductCategory: '',
-        newProductPrice: '',
-        newProductRest: '',
     }
 
-    addNewProduct = (newProductName, newProductCategory, newProductPrice, newProductRest) => {
-        const {products } = this.state;
+    addNewProduct = ( ...fields ) => {
+        const { products } = this.state;
         const productId =  Math.random();
         this.setState({
-            products: [...products, createData(newProductName, newProductCategory, newProductPrice, newProductRest, productId)],
-
+            products: [...products, createData(...fields, productId)],
         });
     }
 
@@ -32,63 +27,29 @@ class TableWork extends Component {
         const { products } = this.state;
         this.setState({
             products: products.filter(product => product.id !== id)
-
         })
     }
 
-    updateProduct = (updateProductName, updateProductCategory, updateProductPrice, updateProductRest, productId) => {
+    editProduct = updatedProduct => {
         const { products } = this.state;
-
-        const updateProducts = products.map((function(product, i) {
-            if (product.id === productId) {
-                return (
-                    product = {
-                        name: updateProductName,
-                        category: updateProductCategory,
-                        price: updateProductPrice,
-                        rest: updateProductRest,
-                        id: Math.random()
-                    }
-                )
-            } else {
-                return (
-                    product = {
-                        name: product.name,
-                        category: product.category,
-                        price: product.price,
-                        rest: product.rest,
-                        id: i
-                    }
-                )
-            }
-        }))
         this.setState({
-            products: updateProducts
+            products: products.map(product => product.id === updatedProduct.id ? updatedProduct : product)
         })
-    }
-
+    };
 
     render() {
 
-        const { newProductName, newProductCategory, newProductPrice, newProductRest, products } = this.state;
+        const { products } = this.state;
         return (
 
             <div className="wrapper">
                 <ProductsTable
                     products={products}
                     onRemoveProduct={this.removeProduct}
-                    onUpdateProduct={this.updateProduct}
+                    onUpdateProduct={this.editProduct}
                 />
                 <AddProductForm
                     addNewProduct={this.addNewProduct}
-                    newProductName={newProductName}
-                    newProductCategory={newProductCategory}
-                    newProductPrice={newProductPrice}
-                    newProductRest={newProductRest}
-                    onChangeName={this.onChangeName}
-                    onChangeCategory={this.onChangeCategory}
-                    onChangePrice={this.onChangePrice}
-                    onChangeRest={this.onChangeRest}
                 />
             </div>
         )

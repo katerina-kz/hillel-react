@@ -6,8 +6,6 @@ import "react-inputs-validation/lib/react-inputs-validation.min.css";
 import PropTypes from 'prop-types';
 import product from "../../prop-types/product";
 
-
-
 class AddProductForm extends Component {
 
     constructor(props) {
@@ -27,10 +25,6 @@ class AddProductForm extends Component {
         }
     }
 
-    componentDidMount() {
-        const requiredValidator = value => !value ? 'Required!' : '';
-    }
-
     resetFields = () => {
         this.setState({
             newProductName: '',
@@ -42,8 +36,6 @@ class AddProductForm extends Component {
 
     render () {
         const {requiredValidator} = this.state;
-        const { addNewProduct } = this.props;
-
         return (
                 <div className="form-block">
                     <Textbox
@@ -56,7 +48,7 @@ class AddProductForm extends Component {
                             placeholder: "Place your name here ^-^"
                         }}
                         validate={requiredValidator}
-                        value={this.newProductName}
+                        value={this.state.newProductName}
                         onChange={e => { this.setState({ newProductName: e }) }}
                         onBlur={() => { ( this.state.newProductName === '') ? this.setState({ hasNameError: false }) : this.setState({ hasNameError: true }) }}
                     />
@@ -70,7 +62,7 @@ class AddProductForm extends Component {
                             placeholder: "Place product category here ^-^"
                         }}
                         validate={requiredValidator}
-                        value={this.newProductCategory}
+                        value={this.state.newProductCategory}
                         onChange={e => {this.setState({ newProductCategory: e }) }}
                         onBlur={() => {( this.state.newProductCategory === '') ? this.setState({ hasCategoryError: false }) : this.setState({ hasCategoryError: true }) }}
                     />
@@ -84,7 +76,7 @@ class AddProductForm extends Component {
                             placeholder: "Place product price here ^-^"
                         }}
                         validate={requiredValidator}
-                        value={this.newProductPrice}
+                        value={this.state.newProductPrice}
                         onChange={e => { this.setState({ newProductPrice: e }) }}
                         onBlur={() => {( this.state.newProductPrice === '') ? this.setState({ hasPriceError: false }) : this.setState({ hasPriceError: true }) }}
                     />
@@ -98,7 +90,7 @@ class AddProductForm extends Component {
                             placeholder: "Place amount of product here ^-^"
                         }}
                         validate={requiredValidator}
-                        value={this.newProductRest}
+                        value={this.state.newProductRest}
                         onChange={e => {this.setState({ newProductRest: e }) }}
                         onBlur={() => {(this.state.newProductRest === '') ? this.setState({ hasRestError: false }) : this.setState({ hasRestError: true }) }}
                     />
@@ -114,9 +106,8 @@ class AddProductForm extends Component {
                                 hasCategoryError,
                                 hasPriceError,
                                 hasRestError } = this.state;
-                            console.log(this.state)
                             if (hasNameError && hasCategoryError && hasPriceError && hasRestError) {
-                                    addNewProduct(newProductName, newProductCategory, newProductPrice, newProductRest);
+                                    this.props.addNewProduct(newProductName, newProductCategory, newProductPrice, newProductRest);
                                     this.resetFields();
                                 }
                             }
