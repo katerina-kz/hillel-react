@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { Feed, Loader, Button } from 'semantic-ui-react';
 import CommentsList from "./CommentsList";
+import './PostStyle.css';
 
 class Posts extends Component {
 
@@ -10,32 +11,27 @@ class Posts extends Component {
     isCommentOpened: false,
     isPostFetching: false,
   };
-    //
-    // toggleClick = () =>{
-    //     this.setState({
-    //         isCommentOpened: !this.state.isCommentOpened
-    //     });
 
-    // };
-
-    handleCommentSelection = post => {
-        this.setState({ selectedPost: post })
-        console.log(this.state)
-    };
+  handleCommentSelection = post => {
+     const { isCommentOpened } = this.state;
+     !isCommentOpened ? this.setState({ selectedPost: post, isCommentOpened: false }) : this.setState({ selectedPost: null, isCommentOpened: false })
+  };
 
   componentDidMount() {
     this.setState({ isPostFetching: true });
     fetch('https://jsonplaceholder.typicode.com/posts')
       .then(response => response.json())
       .then(posts => {
-        this.setState({ posts })
+        this.setState({
+            posts,
+            isPostFetching: false
+        })
       })
   }
 
   render() {
     const { posts, isPostFetching, selectedPost } = this.state;
-    const { onPostSelect, onShowComments } = this.props;
-    // if (this.state.isCommentOpened) return <CommentsList />;
+    const { onPostSelect } = this.props;
 
     return (
       <Fragment>
@@ -51,7 +47,7 @@ class Posts extends Component {
                 <Feed.Extra text>
                   {post.body}
                 </Feed.Extra>
-                <Button onClick={() => this.handleCommentSelection(post.id)}>See all comments</Button>
+                <Button onClick={() => this.handleCommentSelection(post.id)} onToggle={this.toggleClick}>See all comments</Button>
                   {post.id === selectedPost ? <CommentsList postId={selectedPost}/> : null}
               </Feed.Content>
             </Feed.Event>

@@ -1,0 +1,16 @@
+.six.wide.column,
+.ui.card {
+    margin-left: 30px;
+    margin-top: 30px !important;
+}
+
+.author-column .ui.card {
+    position: fixed !important;
+}
+
+
+.ui.text.active.loader {
+    height: 100vh !important;
+    transform: none !important;
+    position: fixed;
+}

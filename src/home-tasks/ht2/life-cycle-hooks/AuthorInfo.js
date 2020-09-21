@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Card, Dimmer, Loader } from 'semantic-ui-react';
+import { Card, Dimmer, Loader, List } from 'semantic-ui-react';
+import AuthorAlbums from './AuthorAlbums';
 
 class AuthorInfo extends Component {
 
@@ -30,6 +31,7 @@ class AuthorInfo extends Component {
 
   render() {
     const { userData, isFetching } = this.state;
+    const { authorId } = this.props
     if (userData === null) return null;
     return (
       <Card>
@@ -44,6 +46,7 @@ class AuthorInfo extends Component {
           <Card.Description>
            {userData.phone}
           </Card.Description>
+         <AuthorAlbums authorId={authorId}/>
         </Card.Content>
       </Card>
     );

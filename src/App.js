@@ -10,8 +10,8 @@ import Blog from "./home-tasks/ht2/Blog";
     render() {
       return (
           <>
-        <TableWork />
-        {/*<Blog />*/}
+        {/*<TableWork />*/}
+        <Blog />
         </>
       )
     }

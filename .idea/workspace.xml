@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="958d64f3-4ab0-4f42-bce1-57d08836ba06" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/home-tasks/ht1/components/table/ProductRowEditForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home-tasks/ht1/components/TableWork.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/home-tasks/ht1/components/TableWork.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home-tasks/ht1/components/form/AddProductForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/home-tasks/ht1/components/form/AddProductForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home-tasks/ht1/components/table/ProductRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/home-tasks/ht1/components/table/ProductRow.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home-tasks/ht1/components/table/ProductsTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/home-tasks/ht1/components/table/ProductsTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/home-tasks/ht2/life-cycle-hooks/AuthorInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/home-tasks/ht2/life-cycle-hooks/AuthorInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/home-tasks/ht2/life-cycle-hooks/CommentsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/home-tasks/ht2/life-cycle-hooks/CommentsList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/home-tasks/ht2/life-cycle-hooks/Posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/home-tasks/ht2/life-cycle-hooks/Posts.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,59 +21,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/home-tasks/ht1/components/table/ProductsTable.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-              <folding>
-                <element signature="e#1#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/home-tasks/ht1/components/table/ProductRow.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="49" selection-start-line="49" selection-end-line="52" selection-end-column="2" />
-              <folding>
-                <element signature="e#1#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/home-tasks/ht1/components/table/ProductRowEditForm.js">
+        <entry file="file://$PROJECT_DIR$/src/home-tasks/ht2/life-cycle-hooks/Posts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="228">
+              <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
               <folding>
-                <element signature="e#0#39#0" expanded="true" />
+                <element signature="e#0#51#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/home-tasks/ht1/components/table/ValidatedInput.js">
+        <entry file="file://$PROJECT_DIR$/src/home-tasks/ht2/Blog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-126">
-              <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/home-tasks/ht1/components/form/AddProductForm.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="345">
+              <caret line="23" column="53" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="53" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -84,13 +46,52 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/home-tasks/ht1/components/TableWork.js">
+        <entry file="file://$PROJECT_DIR$/src/home-tasks/ht2/life-cycle-hooks/CommentsList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12">
-              <caret line="28" column="67" selection-start-line="28" selection-start-column="67" selection-end-line="28" selection-end-column="67" />
+            <state relative-caret-position="565">
+              <caret line="79" selection-start-line="79" selection-end-line="79" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/home-tasks/ht2/life-cycle-hooks/avatarsApi.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="87" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="87" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/home-tasks/ht2/life-cycle-hooks/AuthorAlbums.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/home-tasks/ht2/life-cycle-hooks/AuthorInfo.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="720">
+              <caret line="48" column="44" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/home-tasks/ht2/life-cycle-hooks/PostStyle.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -100,8 +101,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -132,22 +134,27 @@
         <option value="$PROJECT_DIR$/src/home-tasks/ht1/components/Blog.js" />
         <option value="$PROJECT_DIR$/src/home-tasks/ht2/life-cycle-hooks/Comments.js" />
         <option value="$PROJECT_DIR$/src/home-tasks/ht2/Blog.js" />
-        <option value="$PROJECT_DIR$/src/home-tasks/ht2/life-cycle-hooks/CommentsList.js" />
-        <option value="$PROJECT_DIR$/src/home-tasks/ht2/life-cycle-hooks/Posts.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/home-tasks/ht1/components/table/happybirtday.html" />
         <option value="$PROJECT_DIR$/src/home-tasks/ht1/components/table/ProductRow.js" />
         <option value="$PROJECT_DIR$/src/home-tasks/ht1/components/TableWork.js" />
         <option value="$PROJECT_DIR$/src/home-tasks/ht1/components/form/AddProductForm.js" />
         <option value="$PROJECT_DIR$/src/home-tasks/ht1/components/table/ProductsTable.js" />
         <option value="$PROJECT_DIR$/src/home-tasks/ht1/components/table/ProductRowEditForm.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/home-tasks/ht2/avatars.js" />
+        <option value="$PROJECT_DIR$/src/home-tasks/ht2/life-cycle-hooks/avatarsApi.js" />
+        <option value="$PROJECT_DIR$/src/home-tasks/ht2/life-cycle-hooks/AuthorInfo.js" />
+        <option value="$PROJECT_DIR$/src/home-tasks/ht2/life-cycle-hooks/AuthorAlbums.js" />
+        <option value="$PROJECT_DIR$/src/home-tasks/ht2/life-cycle-hooks/PostStyle.css" />
+        <option value="$PROJECT_DIR$/src/home-tasks/ht2/life-cycle-hooks/CommentsList.js" />
+        <option value="$PROJECT_DIR$/src/home-tasks/ht2/life-cycle-hooks/Posts.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="25" />
-    <option name="width" value="1403" />
-    <option name="height" value="768" />
+    <option name="width" value="1401" />
+    <option name="height" value="764" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -197,6 +204,21 @@
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="table" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="hillel-react" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hillel-react" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="home-tasks" type="462c0819:PsiDirectoryNode" />
+              <item name="ht2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hillel-react" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hillel-react" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="home-tasks" type="462c0819:PsiDirectoryNode" />
+              <item name="ht2" type="462c0819:PsiDirectoryNode" />
+              <item name="life-cycle-hooks" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -208,7 +230,8 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/home-tasks/ht1/components/table" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -218,14 +241,15 @@
     <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet.xml" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/home-tasks/ht1/components/table" />
-      <recent name="$PROJECT_DIR$/src/components" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/home-tasks/ht2/life-cycle-hooks" />
       <recent name="$PROJECT_DIR$/src/home-tasks/ht2" />
       <recent name="$PROJECT_DIR$/src/home-tasks/ht1" />
       <recent name="$PROJECT_DIR$/src/home-tasks" />
+      <recent name="$PROJECT_DIR$/src/components" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/home-tasks/ht1/components/table" />
       <recent name="$PROJECT_DIR$/src/components" />
     </key>
   </component>
@@ -257,18 +281,20 @@
       <workItem from="1600193350473" duration="7742000" />
       <workItem from="1600274096601" duration="10761000" />
       <workItem from="1600332570783" duration="252000" />
-      <workItem from="1600361907715" duration="25531000" />
+      <workItem from="1600361907715" duration="26303000" />
+      <workItem from="1600516176142" duration="18934000" />
+      <workItem from="1600677153194" duration="219000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58662000" />
+    <option name="totallyTimeSpent" value="78587000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18383405" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1881259" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -283,7 +309,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.23694268" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.23694268" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -337,13 +363,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="70" column="23" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Gindi/js/functions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2815" />
@@ -360,18 +379,8 @@
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/cw1/components/User.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/cw1/SimpleExample.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/cw1/components/User.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/cw1/SimpleExample.js" />
     <entry file="file://$USER_HOME$/Downloads/react-course-06-09-2020-master/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -381,83 +390,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht2/life-cycle-hooks/AuthorInfo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="17" lean-forward="true" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht2/life-cycle-hooks/CommentsList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht2/Blog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="13" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht2/life-cycle-hooks/Posts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="57" column="13" lean-forward="true" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht1/components/table/happybirtday.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht1/components/TableWork.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12">
-          <caret line="28" column="67" selection-start-line="28" selection-start-column="67" selection-end-line="28" selection-end-column="67" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht1/components/table/ProductsTable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#1#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht1/components/table/happybirtday.html" />
     <entry file="file://$PROJECT_DIR$/src/home-tasks/ht1/components/form/AddProductForm.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
@@ -468,19 +401,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht1/components/table/ProductRow.js">
+    <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="49" selection-start-line="49" selection-end-line="52" selection-end-column="2" />
+        <state relative-caret-position="195">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
           <folding>
-            <element signature="e#1#42#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="70" column="23" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/home-tasks/ht1/components/table/ValidatedInput.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-126">
+        <state>
           <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
@@ -488,12 +428,103 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht1/components/table/ProductRow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="16" />
+          <folding>
+            <element signature="e#1#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/home-tasks/ht1/components/table/ProductRowEditForm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
+        <state relative-caret-position="-75">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht1/components/TableWork.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="39" column="14" lean-forward="true" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht1/components/table/ProductsTable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#1#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht2/life-cycle-hooks/avatarsApi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="87" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht2/life-cycle-hooks/AuthorAlbums.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht2/life-cycle-hooks/AuthorInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" column="44" selection-start-line="48" selection-start-column="44" selection-end-line="48" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht2/life-cycle-hooks/PostStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht2/life-cycle-hooks/CommentsList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht2/Blog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="53" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht2/life-cycle-hooks/Posts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
