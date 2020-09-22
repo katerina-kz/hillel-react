@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Card, Dimmer, Loader, List } from 'semantic-ui-react';
 import AuthorAlbums from './AuthorAlbums';
+import PropTypes from "prop-types";
 
 class AuthorInfo extends Component {
 
@@ -54,3 +55,7 @@ class AuthorInfo extends Component {
 }
 
 export default AuthorInfo;
+
+AuthorInfo.propTypes = {
+  authorId: PropTypes.number
+}

@@ -14,3 +14,7 @@
     transform: none !important;
     position: fixed;
 }
+
+body {
+    background-color: white !important;
+}

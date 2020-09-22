@@ -1,0 +1,18 @@
+.full-with-img {
+    width: 900px;
+    height: 400px;
+    border: 1px solid #808080;
+}
+
+.glide__slide {
+    display: grid;
+    place-items: center;
+}
+
+body {
+    background-color: black;
+}
+
+form, label, legend, .MuiFormLabel-root {
+    color: #fff !important;
+}

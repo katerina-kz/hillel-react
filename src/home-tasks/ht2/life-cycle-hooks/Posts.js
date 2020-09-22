@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import { Feed, Loader, Button } from 'semantic-ui-react';
 import CommentsList from "./CommentsList";
 import './PostStyle.css';
+import PropTypes from "prop-types";
 
 class Posts extends Component {
 
@@ -59,3 +60,7 @@ class Posts extends Component {
 }
 
 export default Posts;
+
+Posts.propTypes = {
+    onPostSelect: PropTypes.func.isRequired
+}

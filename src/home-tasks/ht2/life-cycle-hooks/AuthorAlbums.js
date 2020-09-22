@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Dimmer, Loader, Message } from 'semantic-ui-react';
+import PropTypes from 'prop-types';
 
 class AuthorAlbums extends Component {
 
@@ -21,7 +22,6 @@ class AuthorAlbums extends Component {
 
     fetchAlbumsData() {
         const { authorId } = this.props;
-        console.log(authorId);
         if (!authorId) return;
         this.setState({ isFetching: true });
         fetch(`https://jsonplaceholder.typicode.com/users/${authorId}/albums`)
@@ -54,3 +54,7 @@ class AuthorAlbums extends Component {
 }
 
 export default AuthorAlbums;
+
+AuthorAlbums.propTypes = {
+    authorId: PropTypes.number
+}

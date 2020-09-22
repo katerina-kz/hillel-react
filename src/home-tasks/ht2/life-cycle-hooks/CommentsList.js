@@ -2,6 +2,7 @@ import React, {Component, Fragment} from 'react';
 import {Loader, Comment, Header, Dimmer } from 'semantic-ui-react';
 import './avatarsApi';
 import avatarsApi from "./avatarsApi";
+import PropTypes from "prop-types";
 
 class CommentsList extends Component {
 
@@ -78,5 +79,8 @@ class CommentsList extends Component {
     }
 }
 
-
 export default CommentsList;
+
+CommentsList.propTypes = {
+    postId: PropTypes.number
+}
