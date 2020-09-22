@@ -2,28 +2,14 @@ import React,  { useEffect, useRef } from 'react';
 import Glide from '@glidejs/glide'
 import '@glidejs/glide/dist/css/glide.core.min.css'
 import "@glidejs/glide/dist/css/glide.theme.min.css";
-import { usePrev } from './CustomHooks/usePrev';
-
-import PropTypes from 'prop-types';
-
-Glide.propTypes = {
-
-};
 
 function GlideJs(props) {
     const {children, options} = props;
-    const slider = useRef(null);
+    const slider = useRef('');
     const glider = null;
 
-    const prevOpt = usePrev({options});
-    console.log(prevOpt);
-    useEffect((slider, glider) => {
-        glider = new Glide('.glide', options).mount()
-
-        // if(options !==  prevOpt.options) {
-        //     glider.update(options)
-        // }
-
+    useEffect((glider) => {
+        glider = new Glide(slider.current, options).mount()
         return function clean() {
             glider.destroy()
         }
