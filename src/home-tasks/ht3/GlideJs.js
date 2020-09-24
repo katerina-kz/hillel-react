@@ -6,14 +6,18 @@ import "@glidejs/glide/dist/css/glide.theme.min.css";
 function GlideJs(props) {
     const {children, options} = props;
     const slider = useRef('');
-    const glider = null;
+    const glider = useRef('');
 
-    useEffect((glider) => {
-        glider = new Glide(slider.current, options).mount()
+    useEffect(() => {
+        glider.current = new Glide(slider.current, options).mount()
         return function clean() {
-            glider.destroy()
+            glider.current.destroy()
         }
     });
+
+    useEffect(() => {
+        glider.current.update(options)
+    }, [options]);
 
     return (
         <div ref={slider} className="glide">

@@ -1,0 +1,11 @@
+.form-table {
+    border: 1px solid #000;
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.add-button {
+    margin-top: 16px !important;
+}

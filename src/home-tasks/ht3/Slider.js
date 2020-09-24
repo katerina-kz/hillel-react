@@ -43,7 +43,6 @@ function Slider(props) {
     return (
         <Container className='slider'>
                 <GlideJs options={{ type, perView, autoplay, hoverpause, bullets, controls }}>
-
                     <img className="full-with-img" src="https://jssors8.azureedge.net/demos/image-slider/img/px-beach-daylight-fun-1430675-image.jpg" alt=""/>
                     <img className="full-with-img" src="https://www.jssor.com/demos/img/gallery/980x380/001.jpg" alt=""/>
                     <img className="full-with-img" src="https://albailassan.com/jquery/img/landscape/01.jpg" alt=""/>
