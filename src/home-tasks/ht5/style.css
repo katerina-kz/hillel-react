@@ -1,0 +1,60 @@
+nav {
+    max-width: 400px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 50px;
+}
+
+.home {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 30px !important;
+    place-content: center;
+}
+
+.green.button {
+    margin-right: 5px !important;
+}
+
+.glide {
+    position: fixed;
+    width: 100%;
+}
+
+.glide__arrow--right {
+    right: 60%;
+}
+.post {
+    max-width: 700px;
+    margin: 0 auto !important;
+    margin-top: 30px !important;
+}
+
+.target-link {
+    display: block;
+}
+
+.fade-enter,
+.fade-exit {
+    transition: opacity 250ms ease-out;
+}
+
+.fade-enter {
+    opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+    opacity: 1;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit-active {
+    opacity: 0.01;
+}
+
+.active {
+    color: red;
+}

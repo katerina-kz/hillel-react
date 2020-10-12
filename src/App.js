@@ -5,6 +5,7 @@ import './App.css';
 // import Blog  from "./home-tasks/ht2/Blog";
 // import Slider from './home-tasks/ht3/Slider';
 import Form from './home-tasks/ht4/Form';
+import BlogRouter from "./home-tasks/ht5/BlogRouter";
 
 
   class App extends Component {
@@ -13,8 +14,9 @@ import Form from './home-tasks/ht4/Form';
           <>
         {/*<TableWork />*/}
         {/*<Slider />*/}
-        <Form />
+        {/*<Form />*/}
         {/*<Blog />*/}
+        <BlogRouter/>
         </>
       )
     }
