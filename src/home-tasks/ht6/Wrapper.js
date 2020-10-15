@@ -1,14 +1,16 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import createStore from './redux/createStore';
-import ReduxApp from './ShopRedux';
-
+import ReduxApp from './components/ShopRedux';
+import {saveState} from "./saveState";
 
 const store = createStore();
 
-function Wrapper({counter}) {
+store.subscribe(() => {
+    saveState(store.getState());
+})
 
-    console.log(counter);
+function Wrapper() {
     return (
         <Provider store={store}>
           <ReduxApp/>

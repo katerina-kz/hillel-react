@@ -1,33 +1,28 @@
 import React from 'react';
 import {useDispatch, useSelector} from 'react-redux'
 import {Button, Card } from "semantic-ui-react";
-
 import {removeFromBasket} from "../redux/actions/shopping";
-
-import {useLocalStorage} from "../hooks/useLocalStorage";
-import {decrement} from "../redux/actions/counter";
 import {productIncrement, productDecrement} from "../redux/actions/productCounter";
-
 
 function Basket() {
     const shopping = useSelector(state => state.shopping);
-    // const productCounter = useSelector(state => state.productCounter);
-
     const dispatch = useDispatch();
 
-
-    // console.log(shopping);
     const handleClick = (id) => {
         dispatch(removeFromBasket(id));
-        dispatch(decrement());
     };
 
     const handleIncrement = (id) => {
-            dispatch(productIncrement(id));
+        dispatch(productIncrement(id));
     };
 
     const handleDecrement = (id) => {
         dispatch(productDecrement(id));
+        shopping.map(product => {
+            if (id === product.id) {
+                if (product.amount === 0) dispatch(removeFromBasket(id));
+            }
+        })
     };
 
     return (

@@ -6,20 +6,20 @@ import {
     NavLink,
 } from "react-router-dom";
 import {Menu} from "semantic-ui-react";
-import Basket from "./components/Basket";
-import Page404 from "./components/Page404";
-import MainPage from "./components/MainPage";
-import ProductList from './components/ProductList'
+import Basket from "./Basket";
+import MainPage from "./MainPage";
+import ProductList from './ProductList'
 import Icon from "semantic-ui-react/dist/commonjs/elements/Icon";
-import './style.css';
-import { useSelector } from 'react-redux'
+import '../style.css';
+import { useSelector } from 'react-redux';
 
 function ReduxApp() {
-    const counter = useSelector(state => state.counter);
+    let counter = 0;
+    useSelector(state => state.shopping.map(product => counter += product.amount));
 
     useEffect(() => {
-        if (counter === 0) {
-            document.querySelector('.cart-counter').classList.remove('block');
+        if (counter !== 0) {
+            document.querySelector('.cart-counter').classList.add('block');
         }
     }, [counter]);
 
@@ -46,7 +46,6 @@ function ReduxApp() {
                     <Route path="/" exact><MainPage/></Route>
                     <Route path="/basket" exact><Basket/></Route>
                     <Route path="/products"><ProductList/></Route>
-                    <Route path='*'><Page404/></Route>
                 </Switch>
             </BrowserRouter>
         </>
