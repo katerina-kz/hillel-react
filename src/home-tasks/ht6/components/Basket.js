@@ -1,34 +1,32 @@
 import React from 'react';
 import {useDispatch, useSelector} from 'react-redux'
 import {Button, Card } from "semantic-ui-react";
-import {removeFromBasket} from "../redux/actions/shopping";
-import {productIncrement, productDecrement} from "../redux/actions/productCounter";
+import {addToBasket, removeFromBasket} from "../redux/actions/basket";
 
 function Basket() {
-    const shopping = useSelector(state => state.shopping);
+    const products = useSelector(state => state.products);
+    const cart = useSelector(state => state.cart);
+    const productsInCart = cart.map(({ id, count }) => {
+        const obj = products.data.find(product => product.id === id);
+        return {
+            id, count, ...obj
+        }
+    });
+
     const dispatch = useDispatch();
 
-    const handleClick = (id) => {
+    const handleRemove = (id) => {
         dispatch(removeFromBasket(id));
     };
 
-    const handleIncrement = (id) => {
-        dispatch(productIncrement(id));
-    };
-
-    const handleDecrement = (id) => {
-        dispatch(productDecrement(id));
-        shopping.map(product => {
-            if (id === product.id) {
-                if (product.amount === 0) dispatch(removeFromBasket(id));
-            }
-        })
+    const handleAdd = (id) => {
+        dispatch(addToBasket(id));
     };
 
     return (
         <div className="basket-block">
             {
-                shopping.map(product => (
+                productsInCart.map(product => (
                     <div>
                     <Card
                         header={product.title}
@@ -39,18 +37,12 @@ function Basket() {
                     />
                         <div className='amount-group'>
                             <Button.Group>
-                                <Button onClick={() => handleIncrement(product.id)} positive>Increment +</Button>
+                                <Button onClick={() => handleAdd(product.id)} positive>Add one more +</Button>
                                 <Button.Or />
-                                <Button onClick={() => handleDecrement(product.id)}>Decrement -</Button>
+                                <Button onClick={() => handleRemove(product.id)}>Remove one -</Button>
                             </Button.Group>
-                            <div className='amount'>{product.amount}</div>
+                            <div className='amount'>{product.count}</div>
                         </div>
-                        <Button
-                            color='blue'
-                            onClick={() => handleClick(product.id)}
-                        >
-                            Remove from cart
-                        </Button>
                     </div>
                 ))
             }

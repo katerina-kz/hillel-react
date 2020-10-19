@@ -1,18 +1,17 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom'
-import useData from "../hooks/useData";
 import {Card, Icon, Loader, Button, Dimmer } from 'semantic-ui-react'
-import { addToBasket } from "../redux/actions/shopping";
-import {useDispatch} from "react-redux";
+import { addToBasket } from "../redux/actions/basket";
+import {useDispatch, useSelector} from "react-redux";
 
 
 function ProductList() {
-    const [products, isFetching] = useData('/products', []);
+    const products = useSelector(state => state.products.data);
+    const isFetching = useSelector(state => state.products.loading);
     const dispatch = useDispatch();
 
-    const handleClick = (title, image, meta, description) => {
-        dispatch(addToBasket(title, image, meta, description, 1));
-        document.querySelector('.cart-counter').classList.add('block');
+    const handleClick = (id) => {
+        dispatch(addToBasket(id));
     }
 
     if (!products) return <Redirect to="/"/>;
@@ -28,13 +27,12 @@ function ProductList() {
                         <Card
                             image={product.image}
                             header={product.title}
-                            id={product.id}
                             meta={product.meta}
                             description={product.description}
                         />
                         <Button
                             color='blue'
-                            onClick={() => handleClick(product.title, product.image, product.meta, product.description)}
+                            onClick={() => handleClick(product.id)}
                         >
                             <Icon name='in cart'/>
                             Add to cart

@@ -31,8 +31,7 @@ body {
 
 .cart-counter {
     position: absolute;
-    display: none;
-    /*content: '';*/
+    display: block;
     width: 16px;
     height: 16px;
     background-color: darkgoldenrod;
@@ -44,9 +43,6 @@ body {
     text-align: center;
 }
 
-.block {
-    display: block;
-}
 
 .amount-group {
     display: flex;

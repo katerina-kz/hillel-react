@@ -6,9 +6,9 @@ import {saveState} from "./saveState";
 
 const store = createStore();
 
-store.subscribe(() => {
-    saveState(store.getState());
-})
+// store.subscribe(() => {
+//     saveState(store.getState());
+// })
 
 function Wrapper() {
     return (

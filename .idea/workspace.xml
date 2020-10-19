@@ -2,22 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="958d64f3-4ab0-4f42-bce1-57d08836ba06" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/home-tasks/ht6/saveState.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/home-tasks/ht6/redux/actions/basket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/home-tasks/ht6/redux/actions/products.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/home-tasks/ht6/redux/middlewares/cartLocalStorage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/home-tasks/ht6/redux/reduсers/basket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/home-tasks/ht6/redux/reduсers/products.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home-tasks/ht6/ShopRedux.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/home-tasks/ht6/components/ShopRedux.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/home-tasks/ht6/Wrapper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/home-tasks/ht6/Wrapper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/home-tasks/ht6/api/fake-api-products.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/home-tasks/ht6/components/Basket.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/home-tasks/ht6/components/Basket.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home-tasks/ht6/components/MainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/home-tasks/ht6/components/MainPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home-tasks/ht6/components/Page404.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/home-tasks/ht6/components/ProductList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/home-tasks/ht6/components/ProductList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home-tasks/ht6/hooks/useLocalStorage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home-tasks/ht6/redux/actions/counter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home-tasks/ht6/redux/actions/shopping.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/home-tasks/ht6/redux/actions/shopping.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/home-tasks/ht6/components/ShopRedux.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/home-tasks/ht6/components/ShopRedux.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/home-tasks/ht6/hooks/useData.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/home-tasks/ht6/redux/actions/productCounter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/home-tasks/ht6/redux/actions/shopping.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/home-tasks/ht6/redux/createStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/home-tasks/ht6/redux/createStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home-tasks/ht6/redux/reduсers/counter.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/home-tasks/ht6/redux/reduсers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/home-tasks/ht6/redux/reduсers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home-tasks/ht6/redux/reduсers/productCounter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home-tasks/ht6/redux/reduсers/shopping.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/home-tasks/ht6/redux/reduсers/shopping.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/home-tasks/ht6/redux/reduсers/shopping.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/home-tasks/ht6/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/home-tasks/ht6/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,7 +35,117 @@
     </execution>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/components/Basket.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/redux/reduсers/basket.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/redux/actions/basket.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="31" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/redux/createStore.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="e#0#62#0" expanded="true" />
+                <marker date="1603091412368" expanded="true" signature="499:556" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/Wrapper.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/redux/middlewares/cartLocalStorage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="2" lean-forward="true" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/components/ProductList.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/components/MainPage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="32" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/components/ShopRedux.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="237">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -57,12 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/home-tasks/ht3/Slider.js" />
-        <option value="$PROJECT_DIR$/src/home-tasks/ht4/useLocalStorage.js" />
-        <option value="$PROJECT_DIR$/src/home-tasks/ht4/List.js" />
-        <option value="$PROJECT_DIR$/src/home-tasks/ht4/hooks/useLocalStorage.js" />
-        <option value="$PROJECT_DIR$/src/home-tasks/ht4/package.json" />
-        <option value="$PROJECT_DIR$/src/home-tasks/ht4/friendsApi.json" />
         <option value="$PROJECT_DIR$/src/home-tasks/ht4/friendsApi.js" />
         <option value="$PROJECT_DIR$/src/home-tasks/ht4/Form.js" />
         <option value="$PROJECT_DIR$/src/home-tasks/ht4/hooks/useDocumentTitle.js" />
@@ -97,17 +204,23 @@
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/home-tasks/ht6/redux/reduсers/productCounter.js" />
         <option value="$PROJECT_DIR$/src/home-tasks/ht6/redux/actions/productCounter.js" />
-        <option value="$PROJECT_DIR$/src/home-tasks/ht6/redux/createStore.js" />
         <option value="$PROJECT_DIR$/src/home-tasks/ht6/loadState.js" />
-        <option value="$PROJECT_DIR$/src/home-tasks/ht6/components/ProductList.js" />
-        <option value="$PROJECT_DIR$/src/home-tasks/ht6/redux/reduсers/index.js" />
         <option value="$PROJECT_DIR$/src/home-tasks/ht6/components/MainPage.js" />
-        <option value="$PROJECT_DIR$/src/home-tasks/ht6/style.css" />
-        <option value="$PROJECT_DIR$/src/home-tasks/ht6/components/Basket.js" />
         <option value="$PROJECT_DIR$/src/home-tasks/ht6/redux/reduсers/shopping.js" />
         <option value="$PROJECT_DIR$/src/home-tasks/ht6/ShopRedux.js" />
-        <option value="$PROJECT_DIR$/src/home-tasks/ht6/Wrapper.js" />
         <option value="$PROJECT_DIR$/src/home-tasks/ht6/redux/actions/shopping.js" />
+        <option value="$PROJECT_DIR$/src/home-tasks/ht6/redux/reduсers/products.js" />
+        <option value="$PROJECT_DIR$/src/home-tasks/ht6/redux/actions/products.js" />
+        <option value="$PROJECT_DIR$/src/home-tasks/ht6/redux/reduсers/index.js" />
+        <option value="$PROJECT_DIR$/src/home-tasks/ht6/style.css" />
+        <option value="$PROJECT_DIR$/src/home-tasks/ht6/components/ShopRedux.js" />
+        <option value="$PROJECT_DIR$/src/home-tasks/ht6/components/ProductList.js" />
+        <option value="$PROJECT_DIR$/src/home-tasks/ht6/Wrapper.js" />
+        <option value="$PROJECT_DIR$/src/home-tasks/ht6/components/Basket.js" />
+        <option value="$PROJECT_DIR$/src/home-tasks/ht6/redux/actions/basket.js" />
+        <option value="$PROJECT_DIR$/src/home-tasks/ht6/redux/createStore.js" />
+        <option value="$PROJECT_DIR$/src/home-tasks/ht6/redux/middlewares/cartLocalStorage.js" />
+        <option value="$PROJECT_DIR$/src/home-tasks/ht6/redux/reduсers/basket.js" />
       </list>
     </option>
   </component>
@@ -118,9 +231,9 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="25" />
-    <option name="width" value="1401" />
-    <option name="height" value="764" />
+    <option name="y" value="23" />
+    <option name="width" value="340" />
+    <option name="height" value="24" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -128,6 +241,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -153,11 +267,44 @@
               <item name="home-tasks" type="462c0819:PsiDirectoryNode" />
               <item name="ht6" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="hillel-react" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hillel-react" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="home-tasks" type="462c0819:PsiDirectoryNode" />
+              <item name="ht6" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hillel-react" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hillel-react" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="home-tasks" type="462c0819:PsiDirectoryNode" />
+              <item name="ht6" type="462c0819:PsiDirectoryNode" />
+              <item name="redux" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hillel-react" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hillel-react" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="home-tasks" type="462c0819:PsiDirectoryNode" />
+              <item name="ht6" type="462c0819:PsiDirectoryNode" />
+              <item name="redux" type="462c0819:PsiDirectoryNode" />
+              <item name="actions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hillel-react" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hillel-react" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="home-tasks" type="462c0819:PsiDirectoryNode" />
+              <item name="ht6" type="462c0819:PsiDirectoryNode" />
+              <item name="redux" type="462c0819:PsiDirectoryNode" />
+              <item name="reduсers" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -247,16 +394,19 @@
       <workItem from="1602614777123" duration="24765000" />
       <workItem from="1602748666772" duration="21000" />
       <workItem from="1602777884055" duration="10324000" />
+      <workItem from="1602868349724" duration="2262000" />
+      <workItem from="1603027461579" duration="7742000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="204571000" />
+    <option name="totallyTimeSpent" value="214575000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18597998" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19027181" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -271,7 +421,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3299363" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.23694268" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.17961784" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -304,29 +454,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht4/package.json" />
-    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht5/containers.js" />
-    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht4/hooks/useOnlineStatus.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht4/hooks/useDocumentTitle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" selection-start-column="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht4/Form.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/home-tasks/ht2/Blog.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -445,16 +572,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/hooks/useData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/home-tasks/ht5/BlogRouter.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -462,13 +579,6 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/api/fake-api-products.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -574,26 +684,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/redux/createStore.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/saveState.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/redux/reduсers/productCounter.js">
+    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/redux/reduсers/productCounter.js" />
+    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/components/Page404.js" />
+    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/redux/actions/counter.js" />
+    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/redux/reduсers/counter.js" />
+    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/hooks/useLocalStorage.js" />
+    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/redux/reduсers/shopping.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret selection-end-line="9" selection-end-column="5" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+          <caret selection-end-line="28" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -604,68 +706,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/components/Page404.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/redux/actions/counter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/redux/reduсers/counter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/hooks/useLocalStorage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/components/Basket.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="39" lean-forward="true" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/redux/actions/shopping.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state>
+          <caret selection-end-line="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/redux/reduсers/shopping.js">
+    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/api/fake-api-products.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="82" selection-start-line="20" selection-start-column="82" selection-end-line="20" selection-end-column="82" />
+        <state relative-caret-position="90">
+          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/hooks/useData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
           <folding>
-            <element signature="e#0#72#0" expanded="true" />
+            <element signature="e#0#44#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/redux/reduсers/products.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/redux/actions/products.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/redux/reduсers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+          <folding>
+            <element signature="e#152#195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/components/ShopRedux.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="315">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/components/Basket.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -679,40 +787,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/style.css">
+    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/Wrapper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="907">
-          <caret line="68" column="20" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
+        <state relative-caret-position="315">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/components/ProductList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/Wrapper.js">
+    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/redux/createStore.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#62#0" expanded="true" />
+            <marker date="1603091412368" expanded="true" signature="499:556" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/redux/reduсers/index.js">
+    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/redux/middlewares/cartLocalStorage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="240">
+          <caret line="16" column="2" lean-forward="true" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/redux/actions/basket.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="31" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/redux/reduсers/basket.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>

@@ -11,18 +11,20 @@ import MainPage from "./MainPage";
 import ProductList from './ProductList'
 import Icon from "semantic-ui-react/dist/commonjs/elements/Icon";
 import '../style.css';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from "react-redux";
+import { fetchProducts } from "../redux/actions/products";
 
 function ReduxApp() {
-    let counter = 0;
-    useSelector(state => state.shopping.map(product => counter += product.amount));
+    const cart = useSelector(state => state.cart);
+    const counter = cart.reduce((sum, product) => {
+        return sum + (1 * product.count)
+    }, 0);
 
+
+    const dispatch = useDispatch();
     useEffect(() => {
-        if (counter !== 0) {
-            document.querySelector('.cart-counter').classList.add('block');
-        }
-    }, [counter]);
-
+        dispatch(fetchProducts());
+    }, []);
     return (
         <>
             <BrowserRouter>
@@ -38,7 +40,7 @@ function ReduxApp() {
                             <NavLink activeClassName='active' to="/basket">
                                 <Icon name='cart' size='large'/>
                             </NavLink>
-                            <span className='cart-counter'>{counter}</span>
+                            {counter !== 0 && <span className='cart-counter'>{counter}</span>}
                         </Menu.Item>
                     </Menu>
                 </nav>
