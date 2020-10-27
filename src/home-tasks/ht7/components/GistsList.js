@@ -1,25 +1,15 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import { Item } from 'semantic-ui-react'
-import {Switch, Route, Link, useRouteMatch} from "react-router-dom";
-import { useSelector, useDispatch} from "react-redux";
+import {Switch, Route, Link} from "react-router-dom";
+import { useSelector } from "react-redux";
 import {Container, Grid, GridColumn, Loader} from "semantic-ui-react";
-import './styles.css'
 import GistFiles from './GistFiles';
-import {fetchGistsFollowers} from "../redux/actions/followers";
-import {getFollowersById, getGists, getLoader} from "../redux/selectors/gists";
+import {getGists, getLoader} from "../redux/selectors/gists";
 
 
 function ReduxApp() {
-    // const { path } = useRouteMatch();
     const loader = useSelector(getLoader);
     const gists = useSelector(getGists);
-    // const dispach = useDispatch();
-    // const followers = useSelector(getFollowersById);
-// console.log(followers);
-
-    // const getFollowers = (url) => {
-    //     dispach(fetchGistsFollowers(url));
-    // };
 
     return (
         <Container>
@@ -41,10 +31,6 @@ function ReduxApp() {
                                             <span className="gist-description">Description:</span> {gist.description}
                                             </Item.Description>
                                         }
-                                        <Item.Description>
-                                            <span className="gist-followers">Followers amount:</span>
-                                            {/*{getFollowers(gist.owner.followers_url)}*/}
-                                        </Item.Description>
                                         <Item.Description><span className="gist-description">File: </span>
                                             <Link to={`/gists/${gist.id}`}>
                                                 {gist.files.map(file => file.filename).join(', ')}

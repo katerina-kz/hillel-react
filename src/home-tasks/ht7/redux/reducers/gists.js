@@ -13,7 +13,6 @@ const gistReducer = createReducer(initialState, {
         state.error = null
     },
     [fetchGists.fulfilled]: (state, action) => {
-        debugger
         state.data = action.payload.map(gist => ({
                 ...gist,
                 files: Object.values(gist.files)

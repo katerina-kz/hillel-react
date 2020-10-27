@@ -14,7 +14,6 @@ function GistFiles() {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        // debugger
         if (selectedGist) {
             dispatch(fetchGistsUrl({files: selectedGist.files, gistId}))
         }

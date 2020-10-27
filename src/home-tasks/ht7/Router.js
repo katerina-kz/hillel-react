@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import {fetchGists} from "./redux/actions/gists";
 import GistsList from "./components/GistsList";
+import GridLayout from "./containers/GridLayout";
 
 export default function Blog() {
     const dispatch = useDispatch();
@@ -15,7 +16,7 @@ export default function Blog() {
     return (
         <Container>
             <Router>
-               <GistsList />
+               <GridLayout />
             </Router>
         </Container>
     )
