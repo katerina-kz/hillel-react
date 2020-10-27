@@ -1,16 +1,17 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import createStore from './redux/createStore';
-import ReduxApp from './components/ShopRedux';
+import Router from "./Router";
 
 const store = createStore();
 
-function Wrapper() {
+function Github() {
     return (
         <Provider store={store}>
-          <ReduxApp/>
+            <Router />
         </Provider>
     );
 }
 
-export default Wrapper;
+export default Github;
+

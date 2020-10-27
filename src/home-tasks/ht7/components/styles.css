@@ -1,0 +1,15 @@
+body {
+    padding-top: 30px;
+}
+
+.gist-description {
+    font-weight: 700;
+}
+
+.ui.items a.item:hover, .ui.link.items>.item:hover {
+    cursor: initial !important;
+}
+
+.header:hover {
+    color: rgba(0,0,0,.85) !important;
+}

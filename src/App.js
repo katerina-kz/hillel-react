@@ -7,19 +7,15 @@ import './App.css';
 // import Form from './home-tasks/ht4/Form';
 // import BlogRouter from "./home-tasks/ht5/BlogRouter";
 // import ShopRedux from './home-tasks/ht6/ShopRedux'
-import Wrapper from "./home-tasks/ht6/Wrapper";
+// import Wrapper from "./home-tasks/ht6/Wrapper";
+import Github from "./home-tasks/ht7/Github";
 
 
   class App extends Component {
     render() {
       return (
           <>
-        {/*<TableWork />*/}
-        {/*<Slider />*/}
-        {/*<Form />*/}
-        {/*<Blog />*/}
-        {/*<BlogRouter/>*/}
-        <Wrapper/>
+            <Github/>
         </>
       )
     }
