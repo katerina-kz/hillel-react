@@ -8,14 +8,14 @@ import './App.css';
 // import BlogRouter from "./home-tasks/ht5/BlogRouter";
 // import ShopRedux from './home-tasks/ht6/ShopRedux'
 // import Wrapper from "./home-tasks/ht6/Wrapper";
-import Github from "./home-tasks/ht7/Github";
+// import Github from "./home-tasks/ht7/Github";
 
 
   class App extends Component {
     render() {
       return (
           <>
-            <Github/>
+            {/*<Github/>*/}
         </>
       )
     }
