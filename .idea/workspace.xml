@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="958d64f3-4ab0-4f42-bce1-57d08836ba06" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/home-tasks/ht8/api/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/home-tasks/ht8/api/weather.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/home-tasks/ht8/server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/home-tasks/ht10/server/api/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/home-tasks/ht10/server/api/order.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/home-tasks/ht10/server/api/order.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/home-tasks/ht10/server/connect-db.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/home-tasks/ht10/server/models/order.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/home-tasks/ht10/server/server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/home-tasks/ht10/server/validators/order-validator.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
@@ -24,39 +28,53 @@
     <favorites_list name="hillel-react" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/home-tasks/ht8/server.js">
+        <entry file="file://$PROJECT_DIR$/src/home-tasks/ht10/server/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/home-tasks/ht10/server/api/order.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/home-tasks/ht10/server/validators/order-validator.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+              <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/home-tasks/ht8/api/index.js">
+        <entry file="file://$PROJECT_DIR$/src/home-tasks/ht10/server/api/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/home-tasks/ht9/server.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="27" />
+            <state relative-caret-position="105">
+              <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/home-tasks/ht8/api/weather.js">
+        <entry file="file://$PROJECT_DIR$/src/home-tasks/ht10/server/api/order.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+            <state relative-caret-position="316">
+              <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/home-tasks/ht10/server/models/order.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -79,7 +97,13 @@
       <find>img</find>
       <find>toggleClick</find>
       <find>#</find>
+      <find>todo</find>
+      <find>todos</find>
     </findStrings>
+    <replaceStrings>
+      <replace>order</replace>
+      <replace>orders</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -87,16 +111,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/home-tasks/ht6/components/MainPage.js" />
-        <option value="$PROJECT_DIR$/src/home-tasks/ht6/redux/reduсers/shopping.js" />
-        <option value="$PROJECT_DIR$/src/home-tasks/ht6/ShopRedux.js" />
-        <option value="$PROJECT_DIR$/src/home-tasks/ht6/redux/actions/shopping.js" />
-        <option value="$PROJECT_DIR$/src/home-tasks/ht6/redux/reduсers/products.js" />
-        <option value="$PROJECT_DIR$/src/home-tasks/ht6/redux/actions/products.js" />
-        <option value="$PROJECT_DIR$/src/home-tasks/ht6/redux/reduсers/index.js" />
-        <option value="$PROJECT_DIR$/src/home-tasks/ht6/components/ShopRedux.js" />
-        <option value="$PROJECT_DIR$/src/home-tasks/ht6/components/ProductList.js" />
-        <option value="$PROJECT_DIR$/src/home-tasks/ht6/components/Basket.js" />
         <option value="$PROJECT_DIR$/src/home-tasks/ht6/redux/actions/basket.js" />
         <option value="$PROJECT_DIR$/src/home-tasks/ht6/redux/createStore.js" />
         <option value="$PROJECT_DIR$/src/home-tasks/ht6/redux/reduсers/basket.js" />
@@ -138,6 +152,16 @@
         <option value="$PROJECT_DIR$/src/home-tasks/ht8/server.js" />
         <option value="$PROJECT_DIR$/src/home-tasks/ht8/api/index.js" />
         <option value="$PROJECT_DIR$/src/home-tasks/ht8/api/weather.js" />
+        <option value="$PROJECT_DIR$/src/home-tasks/ht10/server/sevrer.js" />
+        <option value="$PROJECT_DIR$/src/home-tasks/ht10/server/models/shop.js" />
+        <option value="$PROJECT_DIR$/src/home-tasks/ht10/server/connect-db.js" />
+        <option value="$PROJECT_DIR$/src/home-tasks/ht10/server/api/todo.js" />
+        <option value="$PROJECT_DIR$/src/home-tasks/ht10/server/api/shop.js" />
+        <option value="$PROJECT_DIR$/src/home-tasks/ht10/server/api/index.js" />
+        <option value="$PROJECT_DIR$/src/home-tasks/ht10/server/validators/order-validator.js" />
+        <option value="$PROJECT_DIR$/src/home-tasks/ht10/server/server.js" />
+        <option value="$PROJECT_DIR$/src/home-tasks/ht10/server/models/order.js" />
+        <option value="$PROJECT_DIR$/src/home-tasks/ht10/server/api/order.js" />
       </list>
     </option>
   </component>
@@ -158,7 +182,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -182,28 +205,6 @@
               <item name="hillel-react" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="home-tasks" type="462c0819:PsiDirectoryNode" />
-              <item name="ht5" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hillel-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hillel-react" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="home-tasks" type="462c0819:PsiDirectoryNode" />
-              <item name="ht8" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hillel-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hillel-react" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="home-tasks" type="462c0819:PsiDirectoryNode" />
-              <item name="ht8" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hillel-react" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hillel-react" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="home-tasks" type="462c0819:PsiDirectoryNode" />
               <item name="ht9" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -211,8 +212,42 @@
               <item name="hillel-react" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="home-tasks" type="462c0819:PsiDirectoryNode" />
-              <item name="ht9" type="462c0819:PsiDirectoryNode" />
+              <item name="ht10" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hillel-react" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hillel-react" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="home-tasks" type="462c0819:PsiDirectoryNode" />
+              <item name="ht10" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hillel-react" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hillel-react" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="home-tasks" type="462c0819:PsiDirectoryNode" />
+              <item name="ht10" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hillel-react" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hillel-react" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="home-tasks" type="462c0819:PsiDirectoryNode" />
+              <item name="ht10" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hillel-react" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hillel-react" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="home-tasks" type="462c0819:PsiDirectoryNode" />
+              <item name="ht10" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="validators" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hillel-react" type="b2602c69:ProjectViewProjectNode" />
@@ -222,13 +257,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/home-tasks/ht8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/home-tasks/ht10/server" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -245,19 +281,19 @@
     <key name="OPEN_URL_DIALOG">
       <recent name="https://github.com/olegandreyev/react-course-06-09-2020.git" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/home-tasks/ht8" />
-      <recent name="$PROJECT_DIR$/src/home-tasks/ht7/redux/reducers" />
-      <recent name="$PROJECT_DIR$/src/home-tasks/ht7/redux/middlewares" />
-      <recent name="$PROJECT_DIR$/src/home-tasks/ht6/hooks" />
-      <recent name="$PROJECT_DIR$/src/home-tasks/ht6/components" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/home-tasks/ht9/api" />
       <recent name="$PROJECT_DIR$/src/home-tasks/ht7" />
       <recent name="$PROJECT_DIR$/src/home-tasks/ht7/components" />
       <recent name="$PROJECT_DIR$/src/home-tasks/ht6/components" />
       <recent name="$PROJECT_DIR$/src/home-tasks/ht6" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/home-tasks/ht10/server" />
+      <recent name="$PROJECT_DIR$/src/home-tasks/ht8" />
+      <recent name="$PROJECT_DIR$/src/home-tasks/ht7/redux/reducers" />
+      <recent name="$PROJECT_DIR$/src/home-tasks/ht7/redux/middlewares" />
+      <recent name="$PROJECT_DIR$/src/home-tasks/ht6/hooks" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -339,12 +375,13 @@
       <workItem from="1604343818768" duration="73000" />
       <workItem from="1604343894587" duration="148000" />
       <workItem from="1604344075314" duration="11048000" />
-      <workItem from="1604409641064" duration="2767000" />
+      <workItem from="1604409641064" duration="3024000" />
+      <workItem from="1604431245755" duration="5415000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="305407000" />
+    <option name="totallyTimeSpent" value="311079000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -356,10 +393,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49905482" visible="true" weight="0.21816881" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49905482" visible="true" weight="0.22103004" />
       <window_info id="Structure" order="1" sideWeight="0.50094515" side_tool="true" weight="0.1981402" />
       <window_info id="npm" order="2" sideWeight="0.50094515" side_tool="true" weight="0.1981402" />
       <window_info id="Favorites" order="3" sideWeight="0.50094515" side_tool="true" weight="0.1981402" />
@@ -374,7 +411,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3299363" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.34649682" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.34649682" />
       <window_info active="true" anchor="bottom" id="Command Line Tools Console" order="12" visible="true" weight="0.3299363" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -448,50 +485,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/components/MainPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="32" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht6/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht5/containers/AlbumsPhotos.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht7/redux/actions/urlLoading.js" />
-    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht5/containers/Home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="7" column="37" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/home-tasks/ht5/containers/Users.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -773,13 +766,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/home-tasks/ht5/api.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -790,17 +776,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht9/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/home-tasks/ht9/api/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht8/api/weather.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -818,10 +804,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht8/api/weather.js">
+    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht9/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-end-line="32" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht10/server/connect-db.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht10/server/validators/order-validator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht10/server/api/order.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht10/server/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht10/server/models/order.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht10/server/api/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/home-tasks/ht10/server/api/order.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
         </state>
       </provider>
     </entry>
